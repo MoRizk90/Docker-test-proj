@@ -6,7 +6,7 @@ before-install:
   - docker build -t rzkx90/docker-test-proj -f Dockerfile .
 
 script:
-  - docker run -e CI=true rzkx90/docker-test-proj
+  - docker run -e CI=true -d rzkx90/docker-test-proj
 
 deploy:
   provider:  elasticbeanstalk
