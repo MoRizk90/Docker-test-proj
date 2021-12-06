@@ -9,7 +9,7 @@ script:
   - docker run -e CI=true -d rzkx90/docker-test-proj
 
 deploy:
-  provider:  elasticbeanstalk
+  provider: elasticbeanstalk
   region: "eu-west-3"
   app: "dokcer-test-proj"
   env: "Dokcertestproj-env"
